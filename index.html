@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Bally | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Joy Bally</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Hello, I'm Joy Bally</h1>
+            <p>Computer Forensics Student at Kabarak University</p>
+            <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <span class="skill-name">Digital Forensics</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Cybersecurity</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Python Programming</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Network Analysis</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Critical Thinking</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Teamwork</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials-list">
+                <div class="testimonial-item">
+                    <blockquote>"Joy is a dedicated and insightful student, always eager to learn and contribute to class discussions."</blockquote>
+                    <span class="testimonial-author">- Dr. M. Kibet, Lecturer, Kabarak University</span>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"Her attention to detail and analytical skills are impressive. Joy is a valuable team player."</blockquote>
+                    <span class="testimonial-author">- S. Wanjiku, Classmate</span>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"Joy's passion for computer forensics and cybersecurity is inspiring. She is destined for great things."</blockquote>
+                    <span class="testimonial-author">- J. Otieno, Mentor</span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Computer Forensics student at Kabarak University, eager to explore the world of digital investigations and cybersecurity. I enjoy solving complex problems and am committed to continuous learning and professional growth.
+            </p>
+        </section>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Kabarak University</strong><br>
+                    BSc. Computer Forensics<br>
+                    <span class="edu-date">Expected Graduation: 2027</span>
+                </li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Digital Evidence Tracker (Sample)</h3>
+                    <p>A conceptual tool for managing and tracking digital evidence in investigations. (Details coming soon!)</p>
+                </div>
+                <div class="project-item">
+                    <h3>Network Security Analysis (Sample)</h3>
+                    <p>Research and analysis of network vulnerabilities and security best practices. (Details coming soon!)</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaboration or inquiries:</p>
+            <form class="contact-form" action="https://formspree.io/f/xovwgnza" method="post" autocomplete="off">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:jerutojoy004@gmail.com">jerutojoy004@gmail.com</a></li>
+                <li>LinkedIn: <a href="#"></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Joy Bally. All rights reserved.</p>
+    </footer>
+    <script>
+      // Dynamically set copyright year range
+      const startYear = 2024;
+      const currentYear = new Date().getFullYear();
+      document.getElementById('copyright-year').textContent =
+        startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
+    </script>
+</body>
+</html>
